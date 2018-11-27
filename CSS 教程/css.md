@@ -65,8 +65,17 @@ HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义�
     color:red;
 }
 
-
-
+```
+@Controller
+@EnableAutoConfiguration
+public class SampleController {
+ @RequestMapping("/")
+ @ResponseBody
+ String home() {
+   return "Hello World!";
+ }
+}
+```
 
 
 
