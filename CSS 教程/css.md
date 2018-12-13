@@ -77,8 +77,45 @@ public class SampleController {
 }
 ```
 
+在以下实例中, 所有的 p 元素使用 class="center" 让该元素的文本居中:
 
+```
+p.center {text-align:center;}
+```
 
+## CSS 创建
+
+#### 如何插入样式表
+
+插入样式表的方法有三种:
+
+- 外部样式表(External style sheet)
+- 内部样式表(Internal style sheet)
+- 内联样式(Inline style)
+
+#### 外部样式表
+
+当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 <link> 标签链接到样式表。 <link> 标签在（文档的）头部：
+
+```
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+```
+
+#### 内部样式表
+
+当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 <style> 标签在文档头部定义内部样式表，就像这样:
+
+```
+<head>
+<style>
+hr {color:sienna;}
+p {margin-left:20px;}
+body {background-image:url("images/back40.gif");}
+</style>
+</head>
+```
 
 
 
